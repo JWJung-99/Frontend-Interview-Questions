@@ -20,7 +20,7 @@
 
 ## :two: JavaScript
 
-- [실행 컨텍스트란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/JavaScript/Context.md)
+- [실행 컨텍스트란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/JavaScript/Execution-Context.md)
 
 <br />
 
