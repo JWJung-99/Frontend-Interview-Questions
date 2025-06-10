@@ -47,3 +47,4 @@
 ## :six: CS
 
 - [HTTP 프로토콜이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/HTTP.md)
+- [Reflow와 Repaint의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Reflow-vs-Repaint.md)
