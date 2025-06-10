@@ -24,6 +24,17 @@
 
 ## 📊 최적화
 
+`reflow`와 `repaint`를 최적화하는 3가지 방법이 있습니다.
+
+첫째, **`reflow`를 유발하는 CSS 속성을 최소화**하는 것입니다. `width`, `height`, `margin`, `padding`, `border` 등의 속성은 레이아웃을 다시 계산하게 하므로 `reflow`를 발생시킵니다. 가능한 미리 CSS에서 스타일을 설정해 초기 로드 시 계산이 이루어지도록 하고, 이후에는 변경하지 않는 것이 좋습니다.
+
+둘째, **CSS 애니메이션 최적화**입니다. `transform`과 `opacity` 두 속성은 GPU 가속을 사용해 `reflow`를 일으키지 않고 `repaint`만 발생시키므로 CPU 자원을 적게 사용합니다. 따라서 애니메이션에 `transform`과 `opacity` 두 속성만 사용하는 것이 성능에 유리합니다.
+
+마지막으로 **`will-change` 속성을 사용**하는 것입니다. CSS의 `will-change` 속성을 사용해 브라우저에 특정 요소가 변경될 것이라고 미리 언질을 줄 수 있습니다. 예를 들어, `will-change: transform`으로 미리 GPU에서 요소를 준비하게 하여 `reflow` 및 `repaint`에 미치는 영향을 줄일 수 있습니다. 하지만 이를 너무 자주 사용하면 메모리 낭비가 발생하므로 필요한 요소에만 적용해야 합니다.
+
 <br />
 
 ## 📖 참고
+
+- 모던 JavaScript Deep Dive
+- [will-change MDN](https://developer.mozilla.org/ko/docs/Web/CSS/will-change)
