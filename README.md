@@ -34,7 +34,7 @@
 
 ## :four: React
 
-- [State란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/State.md)
+- [Props와 State란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Props-vs-State.md)
 - [React Hook이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Hooks/Hooks.md)
 
 <br />
