@@ -36,6 +36,7 @@
 
 - [Props와 State란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Props-vs-State.md)
 - [React Hook이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Hooks/Hooks.md)
+- [성능 최적화 방법은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Optimization.md)
 
 <br />
 
