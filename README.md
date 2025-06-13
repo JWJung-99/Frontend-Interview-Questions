@@ -28,7 +28,9 @@
 
 ## :three: TypeScript
 
+- [타입스크립트를 사용하는 이유?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/TypeScript.md)
 - [인터페이스란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Interface.md)
+
 
 <br />
 
@@ -51,3 +53,4 @@
 
 - [HTTP 프로토콜이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/HTTP.md)
 - [Reflow와 Repaint의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Reflow-vs-Repaint.md)
+- [프레임워크와 라이브러리의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Framework-vs-Library.md)
