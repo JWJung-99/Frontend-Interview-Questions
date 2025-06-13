@@ -14,7 +14,7 @@ HTTP는 HTML, JSON 등 다양한 데이터 포맷을 전달할 수 있습니다.
 |:---:|:--:|
 |<img alt="image" src="https://www.oreilly.com/openbook/webclient/wcp_0301.gif" />|<img alt="image" src="https://www.oreilly.com/openbook/webclient/wcp_0302.gif" />|
 
-HTTP의 보안을 강홤한 HTTPS(HyperText Transfer Protocol Secure)는 HTTP에 TLS/SSL 프로토콜에 따라 **데이터를 암호화**하여 전송합니다. 이를 통해 보안상 중요한 정보들을 안전하게 보호하여 통신을 주고 받습니다.
+HTTP의 보안을 강화한 HTTPS(HyperText Transfer Protocol Secure)는 HTTP에 TLS/SSL 프로토콜에 따라 **데이터를 암호화**하여 전송합니다. 이를 통해 보안상 중요한 정보들을 안전하게 보호하여 통신을 주고 받습니다.
 
 <br />
 
