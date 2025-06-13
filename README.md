@@ -43,7 +43,7 @@
 
 ## :five: Next.js
 
-- [서버 사이드 렌더링이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/Next.js/SSR.md)
+- [Next.js란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/Next.js/Next-js.md)
 
 <br />
 
