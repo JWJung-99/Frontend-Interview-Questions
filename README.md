@@ -45,7 +45,7 @@
 
 - [성능 최적화 방법은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Optimization.md)
 - [Strict Mode란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Strict-Mode.md)
-
+- [Controlled Component와 Uncontrolled Component의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Controlled-vs-Uncontrolled.md)
 <br />
 
 ## :five: Next.js
