@@ -57,5 +57,6 @@
 ## :six: CS
 
 - [HTTP 프로토콜이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/HTTP.md)
+- [브라우저의 렌더링 과정은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Browser-Rendering.md)
 - [Reflow와 Repaint의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Reflow-vs-Repaint.md)
 - [프레임워크와 라이브러리의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Framework-vs-Library.md)
