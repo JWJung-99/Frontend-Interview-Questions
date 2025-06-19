@@ -31,7 +31,6 @@
 - [타입스크립트를 사용하는 이유?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/TypeScript.md)
 - [인터페이스란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Interface.md)
 
-
 <br />
 
 ## :four: React
@@ -47,6 +46,8 @@
 - [성능 최적화 방법은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Optimization.md)
 - [Strict Mode란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Strict-Mode.md)
 - [Controlled Component와 Uncontrolled Component의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Controlled-vs-Uncontrolled.md)
+- [React의 생명주기란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/React-Lifecycle.md)
+
 <br />
 
 ## :five: Next.js
