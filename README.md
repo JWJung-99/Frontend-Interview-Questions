@@ -71,6 +71,8 @@
 - [HTTP 프로토콜이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/HTTP.md)
   
 - [브라우저의 렌더링 과정은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Browser-Rendering.md)
+
+- [인터넷에 www.google.com을 입력하면?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/When-Entering-Google.md)
   
 - [Reflow와 Repaint의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Reflow-vs-Repaint.md)
   
