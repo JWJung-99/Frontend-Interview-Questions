@@ -30,6 +30,9 @@
 
 - [타입스크립트를 사용하는 이유?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/TypeScript.md)
 - [인터페이스란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Interface.md)
+- [타입 단언이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Assertion.md)
+- [타입 추론이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Inference.md)
+- [타입 가드란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Guard.md)
 
 <br />
 
