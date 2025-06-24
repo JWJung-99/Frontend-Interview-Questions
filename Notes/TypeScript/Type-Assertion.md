@@ -20,7 +20,7 @@ element.style.backgroundColor = "blue";
 
 ## ⚠️ 타입 단언 사용시 주의사항
 
-타입 단언은 컴파일러의 타입 단언을 **우회**하는 것이기 때문에 실제 값이 단언한 타입과 다른 경우 런타임 에러가 발생할 수 있습니다. 따라서 타입 단언은 **해당 타입을 확실히 알고 있을 때만 사용**해야 하며, 가능한 [타입 추론](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Inference.md)과 [타입 가드](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Guard.md)를 우선적으로 사용하는 것이 바람직합니다. 타입 단언의 잘못된/무분별한 사용은 타입스크립트의 장점을 훼손하며 오히려 코드 안정성을 해칠 수 있습니다.
+타입 단언은 컴파일러의 타입 단언을 **우회**하는 것이기 때문에 실제 값이 단언한 타입과 다른 경우 런타임 에러가 발생할 수 있습니다. 따라서 타입 단언은 **해당 타입을 확실히 알고 있을 때만 사용**해야 하며, 가능한 [타입 추론](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Inference.md)과 [타입 가드](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Guard.md)를 우선적으로 사용하는 것이 바람직합니다. 타입 단언의 잘못된/무분별한 사용은 TypeScript의 장점을 훼손하며 오히려 코드 안정성을 해칠 수 있습니다.
 
 <br />
 
@@ -28,7 +28,7 @@ element.style.backgroundColor = "blue";
 
 ### 1. 타입 단언보다는 타입 내로잉(narrowing)을 우선적으로 활용합니다.
 
-타입스크립트는 조건문과 타입 체크를 통해 자동으로 타입을 좁힐(narrowing 할) 수 있으므로 가능한 타입 단언 없이 명확히 하는 것이 권장됩니다.
+TypeScript는 조건문과 타입 체크를 통해 자동으로 타입을 좁힐(narrowing 할) 수 있으므로 가능한 타입 단언 없이 명확히 하는 것이 권장됩니다.
 
 ```tsx
 function printLength(value: string | string[]) {
