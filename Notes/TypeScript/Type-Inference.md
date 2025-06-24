@@ -14,7 +14,7 @@ let num = 10; // number 타입으로 추론
 
 ```ts
 function func(param) { // any
-
+  ...
 }
 ```
 
