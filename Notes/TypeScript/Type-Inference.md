@@ -124,3 +124,6 @@ let arr = [0, 1, null]; // (number | null)[] 타입으로 추론
 <br />
 
 ## :book: 참고
+
+- [캡틴 판교 타입스크립트 핸드북 - 타입 단언](https://joshua1988.github.io/ts/guide/type-inference.html)
+- [한입 타스 - 타입 추론](https://ts.winterlood.com/69607da2-4cca-4b89-b808-f78bb7040c80)
