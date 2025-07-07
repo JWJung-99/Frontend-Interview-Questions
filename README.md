@@ -81,3 +81,4 @@
   
 - [CSR과 SSR의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/CSR-vs-SSR.md)
 
+- [Content-Type 헤더란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Content-Type.md)
