@@ -16,6 +16,8 @@
 
 - [DOCTYPE 이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/HTML-CSS/DOCTYPE.md)
 
+- [CSS 의사 요소와 의사 클래스란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/HTML-CSS/CSS-psuedo.md)
+
 <br />
 
 ## :two: JavaScript
