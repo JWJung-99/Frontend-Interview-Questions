@@ -48,6 +48,8 @@
   
 - [타입 가드란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Guard.md)
 
+- [제네릭이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Generic.md)
+
 <br />
 
 ## :four: React
