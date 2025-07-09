@@ -33,8 +33,14 @@
 ## :three: TypeScript
 
 - [타입스크립트를 사용하는 이유?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/TypeScript.md)
+
+- [타입 별칭이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Alias.md)
   
 - [인터페이스란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Interface.md)
+
+- [타입과 인터페이스의 차이는?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-vs-Interface.md)
+
+- [타입 호환이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Compatibility.md)
   
 - [타입 단언이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Type-Assertion.md)
   
