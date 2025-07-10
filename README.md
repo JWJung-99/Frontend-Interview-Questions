@@ -50,6 +50,8 @@
 
 - [제네릭이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Generic.md)
 
+- [유틸리티 타입이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/TypeScript/Utility-Types.md)
+
 <br />
 
 ## :four: React
