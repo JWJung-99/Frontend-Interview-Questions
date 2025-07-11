@@ -72,6 +72,7 @@
 - [Controlled Component와 Uncontrolled Component의 차이점은?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Controlled-vs-Uncontrolled.md)
 - [React의 생명주기란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/React-Lifecycle.md)
 - [Render phase와 Commit phase의 차이는?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Render-vs-Commit.md)
+- [에러 바운더리란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Error-Boundary.md)
 
 <br />
 
