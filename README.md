@@ -99,3 +99,5 @@
 - [Git 브랜치 전략이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Git-Strategy.md)
 
 - [인증과 인가란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Authentication-Authorization.md)
+
+- [쿠키와 세션이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Cookie-vs-Session.md)
