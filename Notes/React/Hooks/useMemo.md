@@ -2,7 +2,7 @@
 
 <br />
 
-## `useMemo`
+## 📝 `useMemo`
 
 `useMemo`는 리렌더링 사이에 **계산 결과를 캐싱**할 수 있게 해 주는 React Hook입니다.
 
