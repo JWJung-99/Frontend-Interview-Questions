@@ -97,3 +97,5 @@
 - [Content-Type 헤더란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Content-Type.md)
 
 - [Git 브랜치 전략이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Git-Strategy.md)
+
+- [인증과 인가란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Authentication-Authorization.md)
