@@ -104,3 +104,5 @@
 - [인증과 인가란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Authentication-Authorization.md)
 
 - [쿠키와 세션이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Cookie-vs-Session.md)
+
+- [패키지 매니저란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Package-Manager.md)
