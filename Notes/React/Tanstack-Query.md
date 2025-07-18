@@ -181,23 +181,25 @@ export default function App() {
   }
   ```
 
-  `useQuery`에 전달하는 `queryOptions`로 다음과 같은 옵션을 지정할 수 있습니다.
+  **[옵션]**
+
+  `useQuery`에 전달하는 `queryOptions`로 대표적으로 다음과 같은 옵션을 지정할 수 있습니다.
 
   |**옵션**|**설명**|**기본값**|**타입**|
   |---|---|---|---|
   |`queryKey`|**`필수`** 고유한 쿼리 키(식별자)||`unknown[]`|
   |`queryFn`|**필수** 데이터를 가져오는 쿼리함수로, 반드시 데이터를 반환하거나 오류를 던져야 함||`(context: QueryFunctionContext) => Promise<TData>`|
-  |`staleTime`|데이터가 상하는데 걸리는 시간(ms)|`0`|`number | ((query: Query) => number)`|
-  |`gcTime`|비활성 캐시 데이터(inactive)가 메모리에 남아있는 시간(ms)|`5 * 60 * 1000`|`number | Infinity`|
-  |`throwOnError`|쿼리 실패 시 오류를 던질지 여부|`undefined`|`undefined | boolean | (error: TError, query: Query) => boolean`|
-  |`retry`|쿼리 실패 시 재시도 횟수|`3`|`boolean | number | (failureCount: number, error: TError) => boolean`|
-  |`enabled`|쿼리 자동 실행 여부. `false`인 경우, 대기 상태(`pending`)으로 시작|`true`|`boolean | (query: Query) => boolean`|
-  |`refetchInterval`|데이터 자동 갱신 시간 간격(ms)||`number | false | ((query: Query) => number | false | undefined)`|
-  |`refetchOnMount`|`useQuery` 연결 시 데이터 갱신 여부|`true`|`boolean | "always" | ((query: Query) => boolean | "always")`|
-  |`refetchOnWindowFocus`|브라우저 화면 포커스 시 데이터 갱신 여부|`true`|`boolean | "always" | ((query: Query) => boolean | "always")`|
-  |`placeholderData`|대기(`pending`) 상태에서 사용할 데이터||`TData | (previousValue: TData | undefined, previousQuery: Query | undefined) => TData`|
+  |`staleTime`|데이터가 상하는데 걸리는 시간(ms)|`0`|`number \| ((query: Query) => number)`|
+  |`gcTime`|비활성 캐시 데이터(inactive)가 메모리에 남아있는 시간(ms)|`5 * 60 * 1000`|`number \| Infinity`|
+  |`throwOnError`|쿼리 실패 시 오류를 던질지 여부|`undefined`|`undefined \| boolean \| (error: TError, query: Query) => boolean`|
+  |`retry`|쿼리 실패 시 재시도 횟수|`3`|`boolean \| number \| (failureCount: number, error: TError) => boolean`|
+  |`enabled`|쿼리 자동 실행 여부. `false`인 경우, 대기 상태(`pending`)으로 시작|`true`|`boolean \| (query: Query) => boolean`|
+  |`refetchInterval`|데이터 자동 갱신 시간 간격(ms)||`number \| false \| ((query: Query) => number \| false \| undefined)`|
+  |`refetchOnMount`|`useQuery` 연결 시 데이터 갱신 여부|`true`|`boolean \| "always" \| ((query: Query) => boolean \| "always")`|
+  |`refetchOnWindowFocus`|브라우저 화면 포커스 시 데이터 갱신 여부|`true`|`boolean \| "always" \| ((query: Query) => boolean \| "always")`|
+  |`placeholderData`|대기(`pending`) 상태에서 사용할 데이터||`TData \| (previousValue: TData \| undefined, previousQuery: Query \| undefined) => TData`|
   |`select`|가져온 데이터를 변형(선택)하는 함수||`(data: TData) => unknown`|
-  |`structuralSharing`|데이터 구조의 재사용을 최적화해 불변성을 유지하고 불필요한 리렌더링 방지|`true`|`boolean | (oldData: unknown | undefined, newData: unknown) => unknown`|
+  |`structuralSharing`|데이터 구조의 재사용을 최적화해 불변성을 유지하고 불필요한 리렌더링 방지|`true`|`boolean \| (oldData: unknown \| undefined, newData: unknown) => unknown`|
   
   - `queryKey`
 
@@ -272,9 +274,161 @@ export default function App() {
 
   - `select`
 
+    선택 함수를 사용하면 **가져온 데이터를 변형**할 수 있습니다. 쿼리 함수가 반환하는 데이터를 인수로 받아 선택 함수에서 처리하고 반환하면 최종 데이터가 됩니다. 데이터를 가공하는 경우 최종 데이터 타입을 `useQuery`의 세 번째 제네릭 타입으로 선언할 수 있습니다. 만약 가공하지 않는다면 세 번째 제네릭 타입은 자동으로 `queryFn`의 반환값으로 추론됩니다.
+
+    ```tsx
+    import { useQuery } from '@tanstack/react-query'
+    
+    type Users = User[]
+    interface User {
+      id: string
+      name: string
+      age: number
+    }
+    
+    export default function UserNames() {
+      const { data } = useQuery<Users, Error, string[]>({
+        queryKey: ['users'],
+        queryFn: async () => {
+          const res = await fetch('https://api.heropy.dev/v0/users')
+          const { users } = await res.json()
+          return users
+        },
+        staleTime: 1000 * 10,
+        select: data => data.map(user => user.name)
+      })
+      return (
+        <>
+          <h2>User Names</h2>
+          <ul>{data?.map((name, i) => <li key={i}>{name}</li>)}</ul>
+        </>
+      )
+    }
+    ```
+
+  - `placeholderData`
+
+    새로운 데이터를 가져오는 과정에서 쿼리가 무효화되면서 일시적으로 데이터가 없는 상태(`undefined`)가 되면 데이터 출력 화면이 깜빡일 수 있습니다. 이러한 현상을 방지하기 위해 `placeholderData` 옵션을 사용하면 쿼리 함수가 호출되는 **대기 상태(`pending`)에서 임시로 표시할 데이터를 미리 지정**할 수 있습니다. `placeholderData` 옵션에는 함수를 지정할 수 있으며, 이 함수는 새로운 데이터를 가져오기 직전의 이전 데이터를 받을 수 있어 이를 반환해 임시 데이터로 이용할 수 있습니다.
+
+    ```tsx
+    const { data: movies } = useQuery<Movie[]>({
+      queryKey: ['movies', searchText], // 검색어
+      queryFn: async () => {
+        const res = await fetch(`https://omdbapi.com?apikey=7035c60c&s=${searchText}`)
+        const { Search: movies } = await res.json()
+        return movies
+      },
+      placeholderData: prev => prev
+    })
+    ```
+
+  - `structuralSharing`
+
+    `structuralSharing` 옵션으로 새로운 데이터를 가져올 때 **이전 데이터와 비교해 변경되지 않은 부분은 이전 데이터를 재사용하도록 지정**할 수 있습니다. 이를 통해 메모리 사용량을 최적화하고 불필요한 리렌더링을 방지할 수 있습니다.
+
+    `structuralSharing` 옵션이 `true`면 변경된 부분만 새롭게 업데이트하고 변경되지 않은 부분은 이전 데이터의 참조를 재사용합니다. `false`이면 모든 객체가 새로운 참조로 생성됩니다. 하지만 매우 큰 중첩 객체를 다루는 경우, **구조적인 비교 자체가 성능에 부담**이 될 수 있습니다. 따라서 이 경우에는 `structuralSharing` 옵션을 `false`로 지정하는 것이 좋습니다. 또한 데이터가 항상 새로운 참조여야 하거나 데이터가 단순해 깊은 비교가 필요하지 않은 경우에도 `false`로 지정하는 것이 좋습니다.
+
+  **[반환]**
+
+  `useQuery`의 대표적인 반환값은 다음과 같습니다.
+
+  |**반환 속성**|**설명**|**타입**|
+  |---|---|---|
+  |`data`|성공적으로 가져온 데이터|`TData`|
+  |`error`|오류가 발생했을 때 오류 객체<br />오류가 발생하지 않았다면 `null` | `TError \| null`|
+  |`fetchStatus`|`'fetching'`: 쿼리 함수가 실행 중<br />`'paused'`: 쿼리 함수의 가져오기가 일시 중단됨(`isPaused`)<br />`'idle'`: 쿼리 함수가 동작 중이지 않음|`'fetching' \| 'paused' \| 'idle'`|
+  |`isError`|쿼리 함수에서의 오류 발생 여부|`boolean`|
+  |`isFetching`|쿼리 함수가 실행 중|`boolean`|
+  |`isLoading`|쿼리 함수의 첫 번째 가져오기가 진행 중<br />`isFetching && isPending`|`boolean`|
+  |`isPending`|캐시된 데이터가 없고 쿼리가 아직 완료되지 않은 상태|`boolean`|
+  |`isRefetching`|백그라운드에서 다시 가져오기가 진행 중인지 여부<br />`isFetching && !isPending`|`boolean`|
+  |`isStale`|캐시된 데이터가 무효화(Invalidated)되거나 `staleTime`이 경과된 여부|`boolean`|
+  |`refetch`|데이터를 새롭게 다시 가져오는 함수<br />`throwOnError: true` 옵션을 사용해야 오류 발생|`(options: { throwOnError: boolean, cancelRefetch: boolean }) => Promise<UseQueryResult>`|
+  |`status`|`'pending'`: 캐시된 데이터가 없고 아직 완료되지 않은 상태<br />`'error'`: 오류가 발생한 상태<br />`'success'`: 데이터를 성공적으로 가져온 상태|`'pending' \| 'error' \| 'success'`|
+
+  - 상태 확인
+
+    ```tsx
+    import { useQuery } from '@tanstack/react-query';
+  
+    type ResponseValue = {
+      message: string
+      time: string
+    }
+  
+    export default function Example() {
+      const { data, isFetching, isPending, isLoading, isStale } = useQuery<ResponseValue>({
+        queryKey: ['repoData'],
+        queryFn: () =>
+          fetch('https://api.github.com/repos/TanStack/query').then((res) =>
+            res.json(),
+          ),
+        staleTime: 1000 * 10 
+      })
+    
+      return (
+        <>
+          {isLoading ? (
+            <div>로딩 중..</div>
+          ) : (
+            <>
+              <div>{data?.time}</div>
+              <div>데이터가 상했나요?: {JSON.stringify(isStale)}</div>
+              <div>isFetching: {JSON.stringify(isFetching)}</div>
+              <div>isPending: {JSON.stringify(isPending)}</div>
+              <div>isLoading: {JSON.stringify(isLoading)}</div>
+            </>
+          )}
+        </>
+      )
+    }
+    ```
+
+  - 다시 가져오기
+
+    ```tsx
+    import { useQuery } from '@tanstack/react-query';
+  
+    type ResponseValue = {
+      message: string
+      time: string
+    }
+  
+    export default function Example() {
+      const { data, isStale, refetch } = useQuery<ResponseValue>({
+        queryKey: ['repoData'],
+        queryFn: () =>
+          fetch('https://api.github.com/repos/TanStack/query').then((res) =>
+            res.json(),
+          ),
+        staleTime: 1000 * 10 
+      })
+    
+      return (
+        <>
+          {isLoading ? (
+            <div>로딩 중..</div>
+          ) : (
+            <>
+              <div>{data?.time}</div>
+              <div>데이터가 상했나요?: {JSON.stringify(isStale)}</div>
+              <button onClick={() => refetch()}>데이터 가져오기!</button>
+            </>
+          )}
+        </>
+      )
+    }
+    ```
+
 <br />
 
 - **`useMutation`**
+
+  
+
+<br />
+
+- **`useInfiniteQuery`**
 
   
 
