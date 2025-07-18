@@ -539,7 +539,7 @@ export default function App() {
   |**옵션**|**설명**|**기본값**|**타입**|
   |---|---|---|---|
   |`getNextPageParam`|**`필수`** 새로운 다음 페이지를 가져오면, 다음 페이지의 정보로 호출되는 함수<br />다음 페이지 번호를 반환<br />다음 페이지가 없다면 `undefined` 또는 `null` 반환||`(lastPage: TPage, allPages: TPage[], lastPageParam: number, allPageParams: number[]) => TPageParam \| undefined \| null`|
-  |`getPreviousPageParam`|새로운 이전 페이지를 가져오면, 이전 페이지의 정보로 호출되는 함수<br />이전 페이지 번호를 반환<br />이전 페이지가 없다면 `undefined` 또는 `null` 반환||(firstPage: TPage, allPages: TPage[], firstPageParam: number, allPageParams: number[]) => TPageParam \| undefined \| null|
+  |`getPreviousPageParam`|새로운 이전 페이지를 가져오면, 이전 페이지의 정보로 호출되는 함수<br />이전 페이지 번호를 반환<br />이전 페이지가 없다면 `undefined` 또는 `null` 반환||`(firstPage: TPage, allPages: TPage[], firstPageParam: number, allPageParams: number[]) => TPageParam \| undefined \| null`|
   |`initialPageParam`|**필수** 첫 번째 페이지의 번호||`TPageParam`|
   |`maxPages`|저장 및 출력할 최대 페이지의 수<br />페이지가 지나치게 많은 경우에 유용|`Infinite`|`number`|
  
