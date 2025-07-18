@@ -6,6 +6,8 @@
 
 `<Suspense>`는 자식 요소를 로드하기 전까지 화면에 대체 UI<sup>Fallback</sup>를 보여줍니다.
 
+<br />
+
 ### `<Suspense>`
 
 ```jsx
@@ -33,7 +35,7 @@
 
 ### 사용법
 
-- **컨텐츠를 로딩하는 동안 UI<sup>Fallback</sup> 보여주기
+- **컨텐츠를 로딩하는 동안 UI<sup>Fallback</sup> 보여주기**
 
   애플리케이션의 모든 곳을 Suspense 경계로 감쌀 수 있습니다.
 
@@ -44,6 +46,8 @@
   ```
 
   React는 `children`에 필요한 모든 코드와 데이터를 로딩할 때까지 `loading fallback`을 보여줍니다. 데이터를 모두 로딩하면 React는 `Loading` Fallback을 숨기고 로딩된 데이터로 컴포넌트를 렌더링합니다.
+
+<br />
 
 > [!IMPORTANT]
 >
