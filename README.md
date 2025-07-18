@@ -73,13 +73,16 @@
 - [React의 생명주기란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/React-Lifecycle.md)
 - [Render phase와 Commit phase의 차이는?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Render-vs-Commit.md)
 - [에러 바운더리란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Error-Boundary.md)
-- [Susepense란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Suspense.md)
+- [Suspense란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Suspense.md)
+- [TanStack-Query란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Tanstack-Query.md)
 
 <br />
 
 ## :five: Next.js
 
 - [Next.js란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/Next.js/Next-js.md)
+
+- [Next의 Fetch와 TanStack-Query?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/Next.js/Fetch.md)
 
 <br />
 
