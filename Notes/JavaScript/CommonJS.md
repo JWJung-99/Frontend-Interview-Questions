@@ -8,6 +8,8 @@
 
 CommonJS 모듈은 Node.js에서 JavaScript 패키지를 불러올 때 사용하는 방식입니다. `exports` 또는 `module.exports`로 모듈을 내보내고, `require`로 모듈을 가져옵니다.
 
+<br />
+
 > **[참고] CommonJS에서 모듈을 내보낼 때 주의할 점**
 >
 > Node.js에서 CommonJS 모듈은 다음과 같이 시작합니다.
