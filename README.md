@@ -79,6 +79,7 @@
 - [에러 바운더리란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Error-Boundary.md)
 - [Suspense란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Suspense.md)
 - [TanStack-Query란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Tanstack-Query.md)
+- [Vite를 사용하는 이유와 CRA의 한계?](https://github.com/JWJung-99/Frontend-Interview-Questions/tree/main/Notes/React)
 
 <br />
 
