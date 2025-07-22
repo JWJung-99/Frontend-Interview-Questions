@@ -34,6 +34,8 @@
 
 - [Intersection Observer란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/JavaScript/Intersection-Observer.md)
 
+- [비동기 패턴과 Promise란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/JavaScript/Async-Pattern.md)
+
 <br />
 
 ## :three: TypeScript
