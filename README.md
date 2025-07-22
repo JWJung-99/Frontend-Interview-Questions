@@ -32,6 +32,8 @@
 
 - [CommonJS란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/JavaScript/CommonJS.md)
 
+- [Intersection Observer란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/JavaScript/Intersection-Observer.md)
+
 <br />
 
 ## :three: TypeScript
