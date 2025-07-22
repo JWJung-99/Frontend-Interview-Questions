@@ -4,7 +4,7 @@
 
 ## 🧐 Intersection Observer
 
-Intersection Observer는 브라우저 뷰포트와 설정한 요소의 **교차점을 관찰**하여, 요소가 뷰포트에 포함되는지 포함되지 않는지 구별하는 기능을 제공합니다. 이 기능은 비동기적으로 실행되기 때문에 `scoll` 같은 이벤트 기반의 요소 관찰에서 발생하는 렌더링 성능이나 이벤트 연속 호출 같은 문제 없이 사용할 수 있습니다.
+Intersection Observer는 브라우저 뷰포트와 설정한 요소의 **교차점을 관찰**하여, 요소가 뷰포트에 포함되는지 포함되지 않는지 구별하는 기능을 제공합니다. 이 기능은 비동기적으로 실행되기 때문에 `scroll` 같은 이벤트 기반의 요소 관찰에서 발생하는 렌더링 성능이나 이벤트 연속 호출 같은 문제 없이 사용할 수 있습니다.
 
 <div align="center">
   <img width="70%" alt="image" src="https://github.com/user-attachments/assets/c52995c0-3fbc-421b-b5a6-c6dffd2b4f78" />
