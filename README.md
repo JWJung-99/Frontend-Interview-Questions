@@ -120,3 +120,5 @@
 - [번들러란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Bundler.md)
 
 - [패키지 매니저란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Package-Manager.md)
+
+- [CORS란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/CORS.md)
