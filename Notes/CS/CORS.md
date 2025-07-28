@@ -25,7 +25,7 @@
 
   서버에서 `Access-Control-Allow-Origin` 응답 헤더를 설정해 요청을 수락할 출처를 명시적으로 지정할 수 있습니다. 이 헤더를 세팅하면 출처가 다르더라도 `https://www.domain-a.com`의 리소스 요청을 허용하게 됩니다.
 
-  ```json
+  ```
   'Access-Control-Allow-Origin': <origin> | *
   ```
 
