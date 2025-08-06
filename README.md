@@ -87,7 +87,7 @@
 - [에러 바운더리란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Error-Boundary.md)
 - [Suspense란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Suspense.md)
 - [TanStack-Query란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Tanstack-Query.md)
-- [Vite를 사용하는 이유와 CRA의 한계?](https://github.com/JWJung-99/Frontend-Interview-Questions/tree/main/Notes/React)
+- [Vite를 사용하는 이유와 CRA의 한계?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/CRA-vs-Vite.md)
 - [Lazy란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/React/Lazy.md)
 
 <br />
@@ -123,6 +123,8 @@
 - [쿠키와 세션이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Cookie-vs-Session.md)
 
 - [번들러란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Bundler.md)
+
+- [함수형 프로그래밍이란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Functional-Programming.md)
 
 - [패키지 매니저란?](https://github.com/JWJung-99/Frontend-Interview-Questions/blob/main/Notes/CS/Package-Manager.md)
 
